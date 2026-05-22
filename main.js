@@ -16,11 +16,11 @@ const colors = [
 
 // Dinner Menus
 const menus = [
-    '김치찌개 🍲', '된장찌개 🥘', '제육볶음 🐷', '돈가스 🍛', 
-    '초밥 🍣', '삼겹살 🥓', '치킨 🍗', '피자 🍕', 
-    '마라탕 🌶️', '쌀국수 🍜', '파스타 🍝', '햄버거 🍔', 
-    '비빔밥 🥗', '부대찌개 🍲', '떡볶이 🍢', '냉면 🍜',
-    '스테이크 🥩', '탕수육 🥡', '짜장면 🍜', '짬뽕 🍜'
+    'Pizza 🍕', 'Sushi 🍣', 'Burger 🍔', 'Pasta 🍝', 
+    'Steak 🥩', 'Tacos 🌮', 'Ramen 🍜', 'Fried Chicken 🍗', 
+    'Salad 🥗', 'Curry 🍛', 'Fish and Chips 🐟', 'Sandwich 🥪', 
+    'Dim Sum 🥟', 'BBQ Ribs 🍖', 'Pad Thai 🍜', 'Pho 🍲',
+    'Burrito 🌯', 'Kebab 🥙', 'Lasagna 🥘', 'Bibimbap 🥗'
 ];
 
 // Tab Logic
