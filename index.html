@@ -31,7 +31,13 @@
 
         <div id="menu-section" class="tab-content">
             <h1 data-i18n="menuTitle">What's for Dinner?</h1>
-            <div id="menu-display" class="menu-display" data-i18n="menuDefault">Ready for a recommendation?</div>
+            <div id="menu-display-container" class="menu-display-container">
+                <div id="menu-image-container" class="menu-image-container">
+                    <img id="menu-image" src="" alt="Food Image" class="hidden">
+                    <div id="image-placeholder" class="image-placeholder">🍽️</div>
+                </div>
+                <div id="menu-display" class="menu-display" data-i18n="menuDefault">Ready for a recommendation?</div>
+            </div>
             <button id="recommend-btn" class="main-btn" data-i18n="recommendBtn">Recommend Menu</button>
         </div>
     </div>
