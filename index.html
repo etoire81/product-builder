@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기</title>
+    <title>로또 & 저녁메뉴 추천기</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>로또 번호 생성기</h1>
-        <div id="lotto-numbers" class="lotto-numbers"></div>
-        <button id="generate-btn">번호 생성</button>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="lotto">로또 번호</button>
+            <button class="tab-btn" data-tab="menu">저녁 메뉴</button>
+        </div>
+
+        <div id="lotto-section" class="tab-content active">
+            <h1>로또 번호 생성기</h1>
+            <div id="lotto-numbers" class="lotto-numbers"></div>
+            <button id="generate-btn" class="main-btn">번호 생성</button>
+        </div>
+
+        <div id="menu-section" class="tab-content">
+            <h1>오늘 뭐 먹지?</h1>
+            <div id="menu-display" class="menu-display">메뉴를 추천해드릴까요?</div>
+            <button id="recommend-btn" class="main-btn">메뉴 추천</button>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
