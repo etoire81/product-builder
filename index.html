@@ -6,23 +6,33 @@
     <title>Lotto & Dinner Recommender</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
+    <div class="header-controls">
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ko">KO</button>
+        </div>
+        <button id="theme-toggle" class="icon-btn">
+            <span class="mode-icon">🌙</span>
+        </button>
+    </div>
+
     <div class="container">
         <div class="tabs">
-            <button class="tab-btn active" data-tab="lotto">Lotto Numbers</button>
-            <button class="tab-btn" data-tab="menu">Dinner Menu</button>
+            <button class="tab-btn active" data-tab="lotto" data-i18n="lottoTab">Lotto Numbers</button>
+            <button class="tab-btn" data-tab="menu" data-i18n="menuTab">Dinner Menu</button>
         </div>
 
         <div id="lotto-section" class="tab-content active">
-            <h1>Lotto Generator</h1>
+            <h1 data-i18n="lottoTitle">Lotto Generator</h1>
             <div id="lotto-numbers" class="lotto-numbers"></div>
-            <button id="generate-btn" class="main-btn">Generate Numbers</button>
+            <button id="generate-btn" class="main-btn" data-i18n="generateBtn">Generate Numbers</button>
         </div>
 
         <div id="menu-section" class="tab-content">
-            <h1>What's for Dinner?</h1>
-            <div id="menu-display" class="menu-display">Ready for a recommendation?</div>
-            <button id="recommend-btn" class="main-btn">Recommend Menu</button>
+            <h1 data-i18n="menuTitle">What's for Dinner?</h1>
+            <div id="menu-display" class="menu-display" data-i18n="menuDefault">Ready for a recommendation?</div>
+            <button id="recommend-btn" class="main-btn" data-i18n="recommendBtn">Recommend Menu</button>
         </div>
     </div>
     <script src="main.js"></script>
