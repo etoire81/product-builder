@@ -35,6 +35,12 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1) inset;
 }
 
+.lotto-number.yellow { background: #e5a500; }
+.lotto-number.blue   { background: #1565c0; }
+.lotto-number.red    { background: #c62828; }
+.lotto-number.gray   { background: #546e7a; }
+.lotto-number.green  { background: #2e7d32; }
+
 #generate-btn {
     padding: 15px 30px;
     font-size: 18px;
