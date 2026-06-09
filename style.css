@@ -1,65 +1,82 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background: #f7f7f7;
+    background: #fff5eb;
+    color: #4a2c2a;
 }
 
 h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 40px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-size: 2.5rem;
+    color: #ff6b35;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
 }
 
-#lotto-container {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.lotto-number {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.menu-display {
+    width: 320px;
+    height: 120px;
+    background: white;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1) inset;
+    color: #ff6b35;
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.15);
+    margin-bottom: 40px;
+    border: 3px solid #ffccbc;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 20px;
+    text-align: center;
 }
 
-.lotto-number.yellow { background: #e5a500; }
-.lotto-number.blue   { background: #1565c0; }
-.lotto-number.red    { background: #c62828; }
-.lotto-number.gray   { background: #546e7a; }
-.lotto-number.green  { background: #2e7d32; }
+.menu-display.rolling {
+    animation: pulse 0.1s infinite alternate;
+    opacity: 0.8;
+}
 
-#generate-btn {
-    padding: 15px 30px;
-    font-size: 18px;
+.menu-display.highlight {
+    transform: scale(1.1);
+    border-color: #ff6b35;
+    background: #fff3e0;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.02); }
+}
+
+#recommend-btn {
+    padding: 18px 40px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    background: linear-gradient(145deg, #007BFF, #0056b3);
+    background: linear-gradient(135deg, #ff9e7d 0%, #ff6b35 100%);
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
-    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+    transition: all 0.2s ease;
 }
 
-#generate-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+#recommend-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
 }
 
-#generate-btn:active {
+#recommend-btn:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
+}
+
+#recommend-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
 }
